@@ -1,0 +1,23 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "scrapping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run back\" \"npm run front\"",
+    "front": "cd front  && npm start",
+    "back": "cd back && npm start"
+  },
+  "author": "RoM4zz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "website-scraper": "^4.0.0"
+  }
+}
