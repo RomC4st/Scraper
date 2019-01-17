@@ -22,7 +22,7 @@ class Scrap extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const Url = "http://localhost:8080/scraper";
+    const Url = "http://localhost:3002/scraper";
     const config = {
       url: this.state.url,
       path: this.state.path

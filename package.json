@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run back\" \"npm run front\"",
     "front": "cd front  && npm start",
-    "back": "cd back && npm start"
+    "back": "cd back && nodemon index.js"
   },
   "author": "RoM4zz",
   "license": "ISC",

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = 3002
+  ;
 const scrape = require("website-scraper");
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -25,6 +26,13 @@ app.post("/scraper", (req, res) => {
   const FolderName = Data.split("//");
   const Path = req.body.path;
   console.log(req.body.path);
+
+  ////////////Use GET route ////////////
+
+  app.get("/scraper", (req, res) => {
+    res.status(200).json(`Welcome`)
+  })
+
   /////////Use website-scraper /////////
 
   scrape({
